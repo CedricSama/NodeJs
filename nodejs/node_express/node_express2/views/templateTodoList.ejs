@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+<meta name="viewport"
+      content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<title>Document</title>
+</head>
+<body>
+
+<div class="row">
+    <%{%>for ()
+    <div class="col s12 m6 l3" id="todo_list">
+        <div class="card blue">
+            <div class="card-content white-text">
+               <h5><%= data.titre %></h5>
+                <p><%= data.corps %></p>
+            </div>
+            <div class="card-tabs">
+                <ul class="tabs tabs-fixed-width tabs-transparent">
+                    <li class="tab active"><a href="#" class="" style="">Todo 1</a></li>
+                    <li class="tab"><a class="" href="#" style="">Todo 2</a></li>
+                    <li class="tab"><a href="#" style="">Todo 3</a></li>
+                    <li class="indicator" style="right: 1px; left: 167px;"></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <%}%>
+</div>
+
+</body>
+</html>
+
+
