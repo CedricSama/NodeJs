@@ -1,2 +1,16 @@
 .idea/
-node_modules/
+NodeJs/.gitignore
+NodeJs/README.md
+NodeJs/_config.yml
+node/nodeExpressMarlene/npm-debug.log
+node/node_express2/npm-debug.log
+node/sequelize/npm-debug.log
+node/toDo/vendor/
+.idea/vcs.xml
+.idea/workspace.xml
+nodejs/.idea/
+nodejs/node_express/nodeExpressMarlene/.idea/
+nodejs/node_express/nodeExpressMarlene/assets/css/
+nodejs/node_express/node_express/.idea/
+nodejs/node_express/node_express/assets/library/
+nodejs/node_express/node_express2/assets/library/
