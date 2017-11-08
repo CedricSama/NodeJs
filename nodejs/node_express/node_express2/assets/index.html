@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script type="text/javascript" rel="script" src="/statics/library/jquery/dist/jquery.min.js"></script>
+    <script type="text/javascript" rel="script"
+            src="/statics/library/materialize-css/dist/js/materialize.min.js"></script>
+    <script type="text/javascript" rel="script" src="/statics/js/js.js"></script>
+    <link rel="stylesheet" href="/statics/library/materialize-css/dist/css/materialize.css" type="text/css">
+    <link rel="stylesheet" href="/statics/style/stylesheet.css" type="text/css">
+    <title>Node Express</title>
+</head>
+<body>
+<div class="container">
+    <div class="row navhead"><!--navbar-->
+        <!--navbar-->
+        <!-- Dropdown Structure -->
+        <ul id="dropdown1" class="dropdown-content">
+            <li id="connexion"><a href="#">Se Connecter</a></li>
+            <li id="deconnexion" class="myHide"><a href="#">Se Déconnecter</a></li>
+            <li class="divider"></li>
+            <li><a href="#">Créer un compte</a></li>
+        </ul>
+        <nav>
+            <div class="nav-wrapper yellow darken-4">
+                <a href="#!" class="brand-logo">TODO LIST</a>
+                <ul class="right hide-on-med-and-down">
+                    <!-- Dropdown Trigger -->
+                    <li><a class="dropdown-button" href="#" data-activates="dropdown1">Connexion<i
+                            class="material-icons right">arrow_drop_down</i></a></li>
+                </ul>
+            </div>
+        </nav>
+    </div><!--navbar-->
+
+    <div id="toast-container">
+        <div class="col s4 myHidden toast" id="divInvalide" style="top: 0; opacity: 1;">Tu t'es plenté Gro !
+        </div>
+        <div class="col s4 myHidden toast" id="divValide" style="top: 0; opacity: 1;">C'est bon tu es Connecté Gro !</div>
+    </div>
+    <div class="row todoliste"></div>
+    <div class="row"><!--Formulaire-->
+        <div class="col col s12 m12 l12">
+            <div class="row">
+                <form class="col s12 myHidden">
+                    <div class="row">
+                        <div class="col s12 myHidden" id="champConnexion">
+                            <div class="row">
+                                <div class="input-field col s12">
+                                    <input disabled value="Connexion" id="disabled" type="text" class="validate">
+                                    <label for="disabled"></label>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="input-field col s12">
+                                    <input id="first_name" type="text" class="validate">
+                                    <label for="first_name">Nom d'utilisateur</label>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="input-field col s12">
+                                    <input id="password" type="password" class="validate">
+                                    <label for="password">Password</label>
+                                </div>
+                            </div>
+                            <button class="btn waves-effect waves-light yellow darken-4" type="submit" name="action">
+                                CONNEXION
+                                <i class="material-icons right">navigate_next</i>
+                            </button>
+                        </div>
+                    </div>
+                    <!--
+                    <div class="input-field col s12 m6">
+                    <input id="email" type="email" class="validate">
+                    <label for="email">Email</label>
+                </div>
+-->
+                    <!--<div class="row">
+                        <div class="input-field col s12">
+                            <input id="last_name" type="text" class="validate">
+                            <label for="last_name">Last Name</label>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col s12">
+                            This is an inline input field:
+                            <div class="input-field inline">
+                                <input id="email1" type="email" class="validate">
+                                <label for="email1" data-error="wrong" data-success="right">Email</label>
+                            </div>
+                        </div>
+                    </div>-->
+                    <!--
+                    <button class="btn waves-effect waves-light yellow darken-4" type="submit" name="action">Submit
+                        <i class="material-icons right">send</i>
+                    </button>
+-->
+                </form>
+            </div>
+        </div>
+    </div><!--Formulaire-->
+    <!--
+    <div class="row">
+        <div class="col s12" id="todo_list">
+            <div class="card blue">
+                <div class="card-content white-text">
+                    <h5>Ici viens mon todo.</h5>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda delectus ex fugiat molestiae officia pariatur placeat quia quisquam sed ullam. Ab assumenda doloribus ex incidunt neque numquam quibusdam reiciendis voluptatibus!</p>
+                </div>
+                <div class="card-tabs">
+                    <ul class="tabs tabs-fixed-width tabs-transparent">
+                        <li class="tab active"><a href="#" class="" style="">Todo 1</a></li>
+                        <li class="tab"><a class="" href="#" style="">Todo 2</a></li>
+                        <li class="tab"><a href="#" style="">Todo 3</a></li>
+                        <li class="indicator" style="right: 1px; left: 167px;"></li></ul>
+                </div>
+            </div>
+        </div>
+    </div>
+-->
+    <!--
+        <div>
+            <div class="row">&lt;!&ndash;toolbar&#45;&#45;Add&ndash;&gt;
+                &lt;!&ndash;toolbar&#45;&#45;Add&ndash;&gt;
+                <div class="col col s12 m12 l12">
+                    <a class="btn-floating btn-large waves-effect waves-light yellow darken-4" id="btnAdd">
+                        <i class="material-icons">add</i>
+                    </a>
+                </div>
+            </div>&lt;!&ndash;toolbar&#45;&#45;Add&ndash;&gt;
+            <div class="row">&lt;!&ndash;liste des TODOs&ndash;&gt;
+                &lt;!&ndash;liste des TODOs&ndash;&gt;
+                <div class="col col s12 m12 l12">
+                    <div class="badge myBtn">
+                        <a class="waves-effect waves-light btn yellow darken-4 btnModify">Modifier</a>
+                        <a class="waves-effect waves-light btn yellow darken-4 btnDelete">Supression</a>
+                    </div>
+                </div>
+            </div>&lt;!&ndash;liste des TODOs&ndash;&gt;
+        </div>
+    -->
+</div>
+</body>
+</html>

@@ -1,0 +1,77 @@
+/* fallback */
+@font-face {
+    font-family: 'Material Icons';
+    font-style: normal;
+    font-weight: 400;
+    src: url(/statics/style/font/icons.woff2) format('woff2');
+}
+
+.material-icons {
+    font-family: 'Material Icons', sans-serif;
+    font-weight: normal;
+    font-style: normal;
+    font-size: 24px;
+    line-height: 1;
+    letter-spacing: normal;
+    text-transform: none;
+    display: inline-block;
+    white-space: nowrap;
+    word-wrap: normal;
+    direction: ltr;
+    -webkit-font-feature-settings: 'liga';
+    -webkit-font-smoothing: antialiased;
+}
+
+.waves-effect:hover {
+    background-color: #ff572b !important;
+}
+
+#btnAdd {
+    float: right;
+}
+
+.collapsible-header {
+    position: relative;
+    height: 67px;
+}
+
+.myBtn {
+    overflow: hidden;
+    position: absolute;
+    right: 12px;
+}
+
+.nav-wrapper {
+    padding: 0 20px;
+}
+
+.myHide {
+    display: none;
+}
+
+.myHidden {
+    visibility: hidden;
+}
+
+.btnTodoListe {
+    margin: 2px;
+    top: -78px;
+    right: -38px;
+    clear: both;
+    float: right;
+}
+
+#toast-container {
+    top: 1% !important;
+    right: 39% !important;
+}
+
+#divInvalide {
+    top: -10px !important;
+}
+
+#divValide {
+    top: -66px !important;
+}
+
+

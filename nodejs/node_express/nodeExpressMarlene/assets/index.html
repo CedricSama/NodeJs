@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="/static/css/materialize.css">
+    <link rel="stylesheet" href="/static/css/style.css">
+    <script src="/static/js/jquery-3.2.1.js"></script>
+    <script src="/static/js/materialize.js"></script>
+    <script src="/static/js/script.js"></script>
+    <title>index</title>
+</head>
+<body>
+<div class="container">
+    <div class="row">
+        <!--toolbar-->
+        <div class="s12">
+            <form action="/" method="post" >
+                <div>
+                    <label for="taskTitle"></label>
+                    votre tâche:<br>
+                    <input type="text" name="task" id="taskTitle">
+                </div>
+
+                <div>
+                    <label for="taskBody"></label>
+                    décrivez votre tâche:<br>
+                    <textarea name="your_task" id="taskBody"></textarea>
+                </div>
+
+                <div>
+                    <label for="taskId"></label><br>
+                    <input type="text" name="task" id="taskId" style="display: none">
+                </div>
+
+                <button id="btnAdd" class="btn-floating btn-large waves-effect waves-light red blue lighten-4 "><i class="material-icons">add</i></button>
+            </form>
+
+        </div>
+    </div>
+    <div class="row" id="result">
+        <!--liste des todos-->
+
+    </div>
+</div>
+
+</body>
+</html>
+
